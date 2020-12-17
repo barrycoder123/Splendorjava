@@ -10,9 +10,9 @@
 
     ```
 * Files: 
---1. Player.java - The player class and it's methods.
---2. Game.java - The player class where the commands were run. 
---3. Card.java - the card class where card methods are implemented.
+ 1. Player.java - The player class and it's methods.
+ 2. Game.java - The player class where the commands were run. 
+ 3. Card.java - the card class where card methods are implemented.
 
 * [This is a link to my own LinkedIn](https://www.linkedin.com/in/ibrahima-barry-420254160/)
 * [This is a link to my Ngawang Rinchen's LinkedIn](https://www.linkedin.com/in/ngawang-rinchen-91b53a165/)
