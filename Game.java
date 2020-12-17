@@ -1,24 +1,29 @@
+
+import java.util.*;
 import java.util.Scanner;
 
 public class Game {
 	static Scanner sc = new Scanner(System.in);
-	String QUIT = "q";
-	String TAKE_3 = "p3";
-	String TAKE_2 = "p2";
-	String RESERVE = "r";
-	String PURCHASE = "p";
-	String PURCHASE_R = "pr";
-	int BOARD_HEIGHT= 41;
-	int BOARD_WIDTH = 120; 
-	int CARD_WIDTH = 13;
-	int CARD_HEIGHT = 8;
-	int CARD_ROWS = 3;
-	int CARD_COLS = 4;
-	int GEMS = 6;
-	String [] COLOR_ARRAY = {"white", "red","pink", "blue", "green", "yellow"}
-	char [] GAME_ROWS = {'v', 't', 'm'}; 
-	char [][] board = new char[BOARD_HEIGHT][BOARD_WIDTH];
-	String [][] board_color = new String [BOARD_HEIGHT][BOARD_WIDTH];
+  static String QUIT = "q";
+	static String TAKE_3 = "p3";
+	static String TAKE_2 = "p2";
+	static String RESERVE = "r";
+	static String PURCHASE = "p";
+	static String PURCHASE_R = "pr";
+	static int BOARD_HEIGHT= 41;
+	static int BOARD_WIDTH = 120; 
+	static int CARD_WIDTH = 13;
+	static int CARD_HEIGHT = 8;
+	static int CARD_ROWS = 3;
+	static int CARD_COLS = 4;
+	static int GEMS = 6;
+	static String [] COLOR_ARRAY = {"white", "red","pink", "blue", "green", "yellow"}
+	static char [] GAME_ROWS = {'v', 't', 'm'}; 
+	static char [][] board = new char[BOARD_HEIGHT][BOARD_WIDTH];
+	static String [][] board_color = new String [BOARD_HEIGHT][BOARD_WIDTH];
+
+  Card grid[][] = new Card[CARD_ROWS][CARD_COLS];
+
 
 
 	public Game(String fileName) {
@@ -141,7 +146,13 @@ public class Game {
 	
 	public void 
 
-
+    // private vars:
+    private ArrayList<Card> mines = new ArrayList<Card>();
+    private ArrayList<Card> transport = new ArrayList<Card>();
+    private ArrayList<Card> vendors = new ArrayList<Card>();
+    private Player player_1; 
+    private Player player_2;
+    private int gem_bank[] = new int[6];
 
 
 }
